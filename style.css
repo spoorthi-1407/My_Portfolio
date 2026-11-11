@@ -1,0 +1,272 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #091f50;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fca311;
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fca311;
+}
+
+/* Home Section */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #14213d, #243b64);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.welcome {
+    color: #fca311;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #fca311;
+}
+
+.hero h3 {
+    margin-bottom: 18px;
+    color: #dce6f5;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c4dbe2;
+    color: #14213d;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(231, 231, 196);
+    transform: translateY(-3px);
+}
+
+/* Profile Image */
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #fca311;
+    object-fit: cover;
+}
+
+/* Common Section Styling */
+.section {
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #14213d;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #fca311;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: justify;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    border-bottom: 4px solid #fca311;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #14213d;
+    margin-bottom: 12px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #14213d;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #fca311;
+    color: #14213d;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contact-box p {
+    margin: 12px 0;
+}
+
+.contact-box a {
+    color: #573805;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px 7%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .profile img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
